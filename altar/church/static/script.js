@@ -11,13 +11,20 @@ document.addEventListener('DOMContentLoaded', function () {
         window.myCallback = function(data) {
             console.log("myCallback executed successfully.");
 
-            var verseText = data[0].text;
+            var verseInfo = data[0];
+            var bookName = verseInfo.bookname;
+            var chapterNumber = verseInfo.chapter;
+            var verseNumber = verseInfo.verse;
+            var verseText = verseInfo.text;
 
             var verseContainer = document.getElementById('verse-container');
             console.log("verseContainer:", verseContainer);
 
             if (verseContainer) {
-                verseContainer.innerHTML = '<p>' + verseText + '</p>';
+
+                verseContainer.innerHTML = '<p><strong>' + bookName + ' ' + chapterNumber + ':' + verseNumber + '</strong></p>';
+ 
+                verseContainer.innerHTML += '<p>' + verseText + '</p>';
             } else {
                 console.error("Element with ID 'verse-container' not found.");
             }

@@ -18,7 +18,7 @@ a {
 	color: inherit;
 }
 header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 10;
@@ -31,7 +31,11 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	color: #fff;
-	padding: 35px 100px 0;
+	/* padding: 20px 100px 0; */
+	background-color: #000;
+	height: 40px;
+	line-height: 15px;
+	padding-right: 20px;
 }
 header h2 span {
 	color: #bf0a30;
