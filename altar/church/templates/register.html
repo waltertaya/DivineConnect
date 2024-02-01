@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <form action="{% url 'register' %}" method="POST">
+                {% csrf_token %}
+                <h1>Register</h1>
+                <label for="firstname">First Name
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter your first name..." required>
+                </label><br>
+                <label for="firstname">Last Name
+                    <input type="text" name="lastname" id="lastname" placeholder="Enter your last name..." required>
+                </label><br>
+                <label for="username">Username
+                    <input type="text" name="username" id="username" placeholder="Enter your preferred username" required>
+                </label><br>
+                <label for="password">Password
+                    <input type="password" name="password" id="password" placeholder="Enter your preferred password" required>
+                </label><br>
+                <label for="password">Confirm
+                    <input type="password" name="password" id="password" placeholder="Confirm your password" required>
+                </label><br>
+                <input class="btn" type="submit" name="" value="Sign up">
+                <header>
+                    <ul>
+                        <li><a href="{% url 'login' %}">Login</a></li>
+                        <li><a href="{% url 'register' %}">Register</a></li>
+                    </ul>
+                </header>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

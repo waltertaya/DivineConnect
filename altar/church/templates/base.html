@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% load static %}
+
+<head>
+	<meta charset="UTF-8">
+	<title>Alter Of His Presence</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&amp;display=swap" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href={% static "style.css" %} rel="stylesheet">
+</head>
+<body>
+
+<!-- -->
+	<header>
+
+	    <!-- <li>      <img alt="" src="logo.png">     </li>  -->
+
+        <h2>AOHP</h2>
+		<ul class="nav">
+			<li>
+				<a href="{% url 'home' %}">Home</a>
+			</li>
+			<li>
+				<a href="{% url 'about' %}">About</a>
+			</li>
+			<li>
+				<a href="{% url 'services' %}">Services</a>
+			</li>
+			<li>
+				<a href="{% url 'sunday' %}">Sunday service</a>
+			</li>
+            <li>
+				<a href="{% url 'events' %}">events</a>
+			</li>
+			<li>
+				<a href="{% url 'roles' %}">Roles</a>
+			</li>
+			<li>
+				<a href="{% url 'consultations' %}">Consultations</a>
+			</li>
+			<li>
+				<a href="{% url 'sermons' %}">Sermons</a>
+			</li>
+            <li>
+				<a href="{% url 'contact' %}">Contact</a>
+			</li>
+		</ul>
+	</header>
+
+    {% block content %}
+
+    {% endblock %}
+
+	<footer>
+		<p>&copy All Right Reserved 2024</p>
+	</footer>
+
+    <script src="{% static "script" %}"></script>
+</body>
+</html>

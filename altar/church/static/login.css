@@ -1,0 +1,58 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 14px;
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-image: url(./images/a1b.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* backdrop-filter: blur(5px); */
+}
+.login-box {
+    margin: 90px auto;
+    display: block;
+    text-align: center;
+    background-color: rgba(255,255,255,0);
+    /* height: 100vh; */
+}
+form {
+    display: inline-block;
+    width: 24.375rem;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #221d1d;
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgb(82, 80, 80);
+}
+form label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+form input {
+    height: 30px;
+    width: 70%;
+    border-radius: 4px;
+}
+.btn {
+    background-color: rgb(34, 216, 58);
+    height: 40px;
+    border-radius: 4px;
+}
+.btn:hover {
+    opacity: 90%;
+}
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li a {
+    text-decoration: none;
+    font-size: 18px;
+}
