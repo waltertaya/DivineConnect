@@ -2,3 +2,5 @@ secrets.json
 .env
 ../.venv/
 .venv/
+
+.env
