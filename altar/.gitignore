@@ -1,6 +1,1 @@
-secrets.json
-.env
-../.venv/
-.venv/
-
-.env
+requirements.txt
