@@ -1,0 +1,57 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block head %}
+    <title>Events</title>
+{% endblock %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1 class="head1">Church Event, Conference and Seminar</h1>
+    <hr>
+    <div class="events">
+        <div class="events-container">
+            <div class="col-md-4 event-card">
+                <div class="card">
+                    <img src="{% static 'images/event1.jpg' %}" class="card-img-top" alt="Event 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Event 1</h5>
+                        <p class="event-date">Date: Insert Event Date</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4 event-card">
+                <div class="card">
+                    <img src="{% static 'images/event2.jpg' %}" class="card-img-top" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Event 2</h5>
+                        <p class="event-date">Date: Insert Event Date</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="events-container">
+            <div class="col-md-4 event-card">
+                <div class="card">
+                    <img src="{% static 'images/event1.jpg' %}" class="card-img-top" alt="Event 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Event 1</h5>
+                        <p class="event-date">Date: Insert Event Date</p>
+                    </div>
+                </div>
+            </div>
+            <div class="events-container">
+                <div class="col-md-4 event-card">
+                    <div class="card">
+                        <img src="{% static 'images/event1.jpg' %}" class="card-img-top" alt="Event 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Event 1</h5>
+                            <p class="event-date">Date: Insert Event Date</p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+{% endblock %}

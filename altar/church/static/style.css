@@ -8,6 +8,7 @@ html {
 }
 body {
 	font-family: poppins;
+	overflow: auto;
 }
 ul, ul.nav {
 	list-style: none;
