@@ -1,0 +1,77 @@
+-- VERSION_5
+-- START DISKCACHE_3
+/home/waltermitty/DivineConnect/v2_indexcache
+altar.church.tests|1706773702008790377|/home/waltermitty/DivineConnect/altar/church/tests.py
+altar.altar.urls|1706775970480355066|/home/waltermitty/DivineConnect/altar/altar/urls.py
+altar.church.__init__|1706773702004794468|/home/waltermitty/DivineConnect/altar/church/__init__.py
+altar.church.urls|1706778746576874588|/home/waltermitty/DivineConnect/altar/church/urls.py
+altar.__init__|1707159456394083911|/home/waltermitty/DivineConnect/altar|^
+altar.altar.__init__|1706773470046308748|/home/waltermitty/DivineConnect/altar/altar/__init__.py
+altar.altar.wsgi|1706773470366370120|/home/waltermitty/DivineConnect/altar/altar/wsgi.py
+altar.altar.settings|1707160247306218922|/home/waltermitty/DivineConnect/altar/altar/settings.py
+altar.church.apps|1706773702248544892|/home/waltermitty/DivineConnect/altar/church/apps.py
+altar.church.models|1706858869309214127|/home/waltermitty/DivineConnect/altar/church/models.py
+altar.manage|1706773470378372421|/home/waltermitty/DivineConnect/altar/manage.py
+altar.church.views|1706780312845453634|/home/waltermitty/DivineConnect/altar/church/views.py
+altar.altar.asgi|1706773470366370120|/home/waltermitty/DivineConnect/altar/altar/asgi.py
+altar.test|1707135529227995137|/home/waltermitty/DivineConnect/altar/test.py
+altar.church.migrations.__init__|1706773702008790377|/home/waltermitty/DivineConnect/altar/church/migrations/__init__.py
+altar.church.admin|1706773702004794468|/home/waltermitty/DivineConnect/altar/church/admin.py
+-- END DISKCACHE
+-- START DICTIONARY
+17
+11=/home/waltermitty/DivineConnect/altar/manage.py
+14=altar.altar.urls
+5=/home/waltermitty/DivineConnect/altar/altar/wsgi.py
+16=altar.church.urls
+3=/home/waltermitty/DivineConnect/altar/altar/settings.py
+6=altar.altar.wsgi
+15=/home/waltermitty/DivineConnect/altar/church/urls.py
+4=altar.altar.settings
+10=altar.church.apps
+7=/home/waltermitty/DivineConnect/altar/altar/asgi.py
+12=altar.manage
+13=/home/waltermitty/DivineConnect/altar/altar/urls.py
+2=altar.church.views
+8=altar.altar.asgi
+17=ChurchConfig
+9=/home/waltermitty/DivineConnect/altar/church/apps.py
+1=/home/waltermitty/DivineConnect/altar/church/views.py
+-- END DICTIONARY
+-- START TREE 1
+29
+abo|1|about!1^23#5*18@
+all|1|ALLOWED_HOSTS!3^31#1*35@
+app|2|application!5^16#1*51@application!7^16#1*67@
+aut|1|AUTH_PASSWORD_VALIDATORS!3^117#1*35@
+bas|1|BASE_DIR!3^18#1*35@
+chu|1|ChurchConfig!9^4#7*81@
+con|2|consultations!1^51#5*18@contact!1^27#5*18@
+dat|1|DATABASES!3^97#1*35@
+deb|1|DEBUG!3^29#1*35@
+def|1|DEFAULT_AUTO_FIELD!3^140#1*35@
+eve|1|events!1^47#5*18@
+hom|1|home!1^19#5*18@
+ins|1|INSTALLED_APPS!3^45#1*35@
+lan|1|LANGUAGE_CODE!3^123#1*35@
+log|1|login!1^5#5*18@
+mai|1|main!11^7#5*98@
+mid|1|MIDDLEWARE!3^55#1*35@
+reg|1|register!1^12#5*18@
+rol|1|roles!1^39#5*18@
+roo|1|ROOT_URLCONF!3^57#1*35@
+sec|1|SECRET_KEY!3^25#1*35@
+ser|2|sermons!1^35#5*18@services!1^43#5*18@
+sta|1|STATIC_URL!3^135#1*35@
+sun|1|sunday!1^31#5*18@
+tem|1|TEMPLATES!3^73#1*35@
+tim|1|TIME_ZONE!3^125#1*35@
+url|2|urlpatterns!13^23#1*115@urlpatterns!15^17#1*131@
+use|2|USE_I18N!3^127#1*35@USE_TZ!3^129#1*35@
+wsg|1|WSGI_APPLICATION!3^75#1*35@
+-- END TREE
+-- START TREE 2
+2
+def|1|default_auto_field!17&9^5#5*83@
+nam|1|name!17&9^6#5*83@
+-- END TREE
