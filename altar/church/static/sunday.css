@@ -1,0 +1,19 @@
+.main-sunday {
+  margin-top: 50px;
+}
+#schedule {
+  margin: 20px;
+}
+
+#schedule-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#schedule-list li {
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

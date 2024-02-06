@@ -1,0 +1,28 @@
+.sermon-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 80%;
+    margin: 50px auto auto auto;
+  }
+  .video {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+  }
+  .video:nth-child(even) .video-container {
+    order: 2;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  .video:nth-child(even) .sermon {
+    order: 1;
+  }
+.sermon h6 {
+  font-size: 1.2em;
+}

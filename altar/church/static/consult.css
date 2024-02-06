@@ -1,0 +1,31 @@
+.consult-content {
+    max-width: 80%;
+    margin: 50px auto auto auto;
+}
+h2 {
+    color: #333;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+form input,
+form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+form textarea {
+    height: 180px;
+    /* height: 100%; */
+}
+form button {
+    background-color: #8e9edf;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    height: 50px;
+    border-radius: 5px;
+}
