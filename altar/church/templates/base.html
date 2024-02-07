@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'roles.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'sunday.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'events.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'giving.css' %}">
 	
 </head>
 <body>
@@ -35,6 +36,9 @@
 			</li>
 			<li>
 				<a href="{% url 'sunday' %}">Sunday service</a>
+			</li>
+			<li>
+				<a href="{% url 'giving' %}">Giving</a>
 			</li>
             <li>
 				<a href="{% url 'events' %}">events</a>

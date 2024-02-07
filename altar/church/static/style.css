@@ -11,10 +11,10 @@ body {
 	font-family: poppins;
 	overflow: auto;
 }
-ul, ul.nav {
+header ul, ul.nav {
 	list-style: none;
 }
-a {
+header a {
 	text-decoration: none;
 	cursor: pointer;
 	color: inherit;

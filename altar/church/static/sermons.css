@@ -26,3 +26,12 @@
 .sermon h6 {
   font-size: 1.2em;
 }
+@media (max-width: 1070px) {
+  .video {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+  }
+}

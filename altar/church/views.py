@@ -76,3 +76,7 @@ def events(request):
 
 def consultations(request):
     return render(request, "consultations.html")
+
+
+def giving(request):
+    return render(request, "giving.html")

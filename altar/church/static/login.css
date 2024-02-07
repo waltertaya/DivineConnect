@@ -1,13 +1,16 @@
+html {
+    height: 100vh;
+}
+
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     color: white;
     font-size: 14px;
-    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-image: url(./images/a1b.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* backdrop-filter: blur(5px); */
 }
 .login-box {
     margin: 90px auto;
@@ -68,3 +71,178 @@ li a {
     text-decoration: none;
     font-size: 18px;
 }
+/* iPhone 6/7/8 */
+@media (width: 375px) and (height: 667px) {
+    html, body {
+        max-height: 667px;
+        height: 100%;
+
+    }
+    .login-box {
+      margin: 50px auto;
+      width: 90%;
+    }
+    
+    form {
+      width: 100%;
+      padding: 10px;
+    }
+    
+    li {
+      height: 30px;
+      width: 70px;
+      font-size: 14px;
+    }
+  }
+  
+  /* iPhone X */
+  @media (width: 375px) and (height: 812px) {
+    .login-box {
+      margin: 50px auto;
+      width: 90%;
+    }
+    
+    form {
+      width: 100%;
+      padding: 10px;
+    }
+    
+    li {
+      height: 30px;
+      width: 70px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Pixel 2 */
+  @media (width: 411px) and (height: 731px) {
+    .login-box {
+      margin: 50px auto;
+      width: 90%;
+    }
+    
+    form {
+      width: 100%;
+      padding: 10px;
+    }
+    
+    li {
+      height: 30px;
+      width: 70px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Pixel 2 XL */
+  @media (width: 411px) and (height: 823px) {
+    .login-box {
+      margin: 50px auto;
+      width: 90%;
+    }
+    
+    form {
+      width: 100%;
+      padding: 10px;
+    }
+    
+    li {
+      height: 30px;
+      width: 70px;
+      font-size: 14px;
+    }
+  }
+  
+  /* iPhone 6+/7+/8+ */
+  @media (width: 414px) and (height: 736px) {
+    .login-box {
+      margin: 50px auto;
+      width: 90%;
+    }
+    
+    form {
+      width: 100%;
+      padding: 10px;
+    }
+    
+    li {
+      height: 30px;
+      width: 70px;
+      font-size: 14px;
+    }
+  }
+  
+  /* iPhone Xs Max */
+  @media (width: 414px) and (height: 896px) {
+    .login-box {
+      margin: 50px auto;
+      width: 90%;
+    }
+    
+    form {
+      width: 100%;
+      padding: 10px;
+    }
+    
+    li {
+      height: 30px;
+      width: 70px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Galaxy S5 */
+  @media (width: 360px) and (height: 640px) {
+    .login-box {
+      margin: 50px auto;
+      width: 90%;
+    }
+    
+    form {
+      width: 100%;
+      padding: 10px;
+    }
+    
+    li {
+      height: 30px;
+      width: 70px;
+      font-size: 14px;
+    }
+  }
+  
+  /* iPad */
+  @media (width: 768px) and (height: 1024px) {
+    .login-box {
+      margin: 60px auto;
+      width: 70%;
+    }
+    
+    form {
+      width: 100%;
+      padding: 10px;
+    }
+    
+    li {
+      height: 30px;
+      width: 70px;
+      font-size: 14px;
+    }
+  }
+  
+  /* iPad Pro */
+  @media (width: 1024px) and (height: 1366px) {
+    .login-box {
+      margin: 80px auto;
+      width: 60%;
+    }
+    
+    form {
+      width: 100%;
+      padding: 10px;
+    }
+    
+    li {
+      height: 30px;
+      width: 70px;
+      font-size: 14px;
+    }
+  }
