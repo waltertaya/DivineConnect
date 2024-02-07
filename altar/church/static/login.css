@@ -24,7 +24,7 @@ form {
     border: 1px solid #221d1d;
     border-radius: 4px;
     text-align: center;
-    background-color: rgb(82, 80, 80);
+    background-color: rgba(41, 40, 40, 0.533);
 }
 form label {
     display: flex;
@@ -37,7 +37,7 @@ form input {
     border-radius: 4px;
 }
 .btn {
-    background-color: rgb(34, 216, 58);
+    background-color: rgb(34, 98, 216);
     height: 40px;
     border-radius: 4px;
 }
@@ -51,6 +51,18 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+li {
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(60, 62, 64, 0.255);
+    border-radius: 5px;
+}
+li :hover {
+    background-color: rgba(66, 149, 231, 0.458);
 }
 li a {
     text-decoration: none;
