@@ -45,6 +45,11 @@
 	background: #bf0a30;
 	text-transform: uppercase;
 }
+.banner-area a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
 .footer {
     position: fixed;
     bottom: 0;
