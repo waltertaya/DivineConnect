@@ -1,6 +1,7 @@
+python==3.8
 asgiref==3.7.2
 decouple==0.0.7
-Django>=4.2.0,<5.0.2
-django-embed-video==1.4.9
 sqlparse==0.4.4
 python-decouple
+django-embed-video==1.4.9
+Django>=4.2.0,<5.0.2
