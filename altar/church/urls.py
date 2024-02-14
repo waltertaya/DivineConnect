@@ -15,4 +15,6 @@ urlpatterns = [
     path("consultations/", views.consultations, name="consultations"),
     path("sermons/", views.sermons, name="sermons"),
     path("giving/", views.giving, name="giving"),
+    path('api/sunday/', views.sundayData, name='sunday_data_api'),
+    path('api/events/', views.eventsData, name='events_data_api'),
 ]

@@ -1,7 +1,9 @@
 from django.contrib.auth import authenticate, login, logout
+from django.http import JsonResponse
+from django.core.serializers import serialize
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
-# from .models import *
+from .models import SundaySchedule, Event
 
 
 def log_in(request):
@@ -58,6 +60,12 @@ def sunday(request):
     return render(request, "sunday.html")
 
 
+def sundayData(request):
+    sunday_schedules = SundaySchedule.objects.all()
+    data = [{'time': schedule.time, 'event': schedule.schedules} for schedule in sunday_schedules]
+    return JsonResponse(data, safe=False)
+
+
 def sermons(request):
     return render(request, "sermons.html")
 
@@ -72,6 +80,23 @@ def services(request):
 
 def events(request):
     return render(request, "events.html")
+
+
+def eventsData(request):
+    events = Event.objects.all()
+    data = []
+
+    for event in events:
+        # Assuming the image field is named 'image' and the model has a method 'get_image_url'
+        event_data = {
+            'title': event.title,
+            'date': event.date,
+            'image': event.image.url if event.image else None,
+            'event': event.content
+        }
+        data.append(event_data)
+
+    return JsonResponse(data, safe=False)
 
 
 def consultations(request):

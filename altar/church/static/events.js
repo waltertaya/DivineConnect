@@ -1,22 +1,5 @@
 const eventsContainer = document.getElementById('events-container');
 
-// Sample data for events
-const events = [
-  {
-    date: '2022-10-15',
-    title: 'Tech Conference',
-    content: 'Join us for an exciting tech conference showcasing the latest innovations in the industry.',
-    image: 'images/event1.jpeg'
-  },
-  {
-    date: '2022-11-05',
-    title: 'Music Festival',
-    content: 'Experience a weekend filled with live music performances from top artists around the world.',
-    image: 'images/event.jpeg'
-  },
-  // Add more events here
-];
-
 // Function to generate event cards
 function generateEventCard(event) {
   const eventCard = document.createElement('div');
@@ -33,7 +16,7 @@ function generateEventCard(event) {
   eventTitle.textContent = event.title;
 
   const eventContent = document.createElement('p');
-  eventContent.textContent = event.content;
+  eventContent.textContent = event.event; // Assuming the API returns 'event' field
 
   eventCard.appendChild(eventImage);
   eventCard.appendChild(eventDate);
@@ -43,13 +26,20 @@ function generateEventCard(event) {
   return eventCard;
 }
 
-// Function to generate event cards for all events
-function generateEventCards() {
-  events.forEach(event => {
-    const eventCard = generateEventCard(event);
-    eventsContainer.appendChild(eventCard);
-  });
+// Function to generate event cards from API data
+async function generateEventCardsFromAPI() {
+  try {
+    const response = await fetch('/api/events/');
+    const events = await response.json();
+
+    events.forEach(event => {
+      const eventCard = generateEventCard(event);
+      eventsContainer.appendChild(eventCard);
+    });
+  } catch (error) {
+    console.error('Error fetching event data:', error);
+  }
 }
 
-// Generate event cards on page load
-generateEventCards();
+// Generate event cards from API on page load
+generateEventCardsFromAPI();
